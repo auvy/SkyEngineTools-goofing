@@ -83,8 +83,9 @@ struct MeshLod {
     if (skipUvs == 0) { // or mesh version < 0x1d
         Vec2Padded uvBuffer[sharedVertices];
     }
-    if (false) { // if animated
-        BoneWeight animWeights[sharedVertices];
+    if (true) { // if animated, flag from compressed script
+        // BoneWeight animWeights[sharedVertices]; // this doesnt seem to work
+        u8 animWeights[sharedVertices * 4]  // skipping weights, now data looks ok
     }
     
     if (!isIdx32) {
