@@ -86,6 +86,7 @@ struct MeshLod {
     if (true) { // if animated, flag from compressed script
         // BoneWeight animWeights[sharedVertices]; // this doesnt seem to work
         u8 animWeights[sharedVertices * 4]  // skipping weights, now data looks ok
+        // u8 animWeights[sharedVertices * 4] // sometimes its 8 idk when though
     }
     
     if (!isIdx32) {
