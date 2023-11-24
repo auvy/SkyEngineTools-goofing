@@ -155,7 +155,8 @@ struct MeshLod {
     }
     
     if (flag3) {
-        u8 altFlag3Data[sharedVtxCnt * 4];
+        //u8 altFlag3Data[sharedVtxCnt * 4];
+        u8 altFlag3Data[sharedVertices * 4];
     }
 };
 
